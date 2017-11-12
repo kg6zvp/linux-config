@@ -1,0 +1,4 @@
+#!/bin/bash
+
+config=".gitconfig" source_file="$1/gitconfig" source $1/modules.d/config_installer
+

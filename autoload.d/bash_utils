@@ -1,18 +1,31 @@
 #!/bin/bash
 
-pcurl() {
-	username="$(whoami)"
-	echo -n "Password: " 1>&2
-	read -s password 1>&2
-	curl -u $username:$password "$@"
-}
+if [[ ! -z $(type -t pcurl) ]]; then
+	pcurl() {
+		username="$(whoami)"
+		echo -n "Password: " 1>&2
+		read -s password 1>&2
+		curl -u $username:$password "$@"
+	}
+else
+	echo ""> /dev/null
+fi
 
-function run_temp_env(){
-	export HISTFILE="/dev/null"
-	$shell
-	exit
-}
+if [[ ! -z $(type -t run_temp_env) ]]; then
+	function run_temp_env(){
+		export HISTFILE="/dev/null"
+		$shell
+		exit
+	}
+else
+	echo ""> /dev/null
+fi
 
-function download_as_chrome(){
-	wget -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36' "$@"
-}
+if [[ ! -z $(type -t download_as_chrome) ]]; then
+	function download_as_chrome(){
+		wget -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36' "$@"
+	}
+else
+	echo ""> /dev/null
+fi
+

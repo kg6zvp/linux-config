@@ -1,0 +1,33 @@
+[user]
+	email = smccollum@mccollum.enterprises
+	name = Sam McCollum
+[credential]
+	helper = cache --timeout=7200
+[alias]
+	lg = log --graph --decorate
+	lgl = log --graph --decorate --oneline
+	st = status
+	ap = add -p
+	cb = checkout -b
+	ci = commit
+	cm = commit -m
+	co = checkout
+	cop = checkout -p
+	com = checkout master
+	sh = show HEAD
+	cp = cherry-pick
+	br = branch
+	brd = branch -D
+	ca = commit --amend
+	can = commit --amend --no-edit
+	ds = diff --staged
+	db = diff master...HEAD
+	ph = push
+	pf = push --force
+	psu = push -u origin HEAD
+	pl = pull
+	plf = pull --force
+	rao = remote add origin
+	rso = remote show origin
+	rbi = rebase -i
+	rbim = rebase -i master

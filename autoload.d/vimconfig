@@ -1,0 +1,4 @@
+#!/bin/bash
+
+config=".vimrc" source_file="$1/vimrc" source $1/modules.d/config_installer
+

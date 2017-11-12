@@ -24,7 +24,7 @@ alias github2pdf="md2pdf -V geometry:margin=2cm --from=markdown_github"
 alias sshfsmediaproxy='sshfs -o ProxyCommand="nc --proxy localhost:8005 --proxy-type socks5 %h %p" 192.168.1.127:/home/ nas'
 alias t="tmux"
 
-source $1/modules.d/mvn_aliases ~/wildfly-10.1.0.Final
+#wildfly_dir=~/wildfly-10.1.0.Final source $1/modules.d/mvn_aliases
 alias rp="runProject"
 
 alias rb="run_temp_env"
