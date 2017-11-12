@@ -1,0 +1,5 @@
+# show the calendar
+
+#Zeige des Kalendars
+echo "Kalendar:      $(date '+%H:%M')"
+cal -s #|sed 's/^/\t/'

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+WILDFLY_DIR=$1
+
+function getCurrentDir(){
+	echo "${PWD##*/}"
+}
+
+function runProject(){
+	echo "cp \"$1\" $WILDFLY_DIR/standalone/deployments/"
+	cp "$1" $WILDFLY_DIR/standalone/deployments/
+}
+
+function relaunch(){
+	current_directory=`getCurrentDir`
+	mvn package -DskipTests
+	runProject "target/$current_directory.war"
+}

@@ -1,0 +1,10 @@
+# display disk space report
+
+#HDD Infos zeigen
+echo "Speicherplatz"
+DF_OUT="$(df -h)"
+echo -n "	"
+echo "$DF_OUT"|head -n1
+echo -n "	"
+echo "$DF_OUT"|egrep '/$'|fgrep ' '
+echo ""
