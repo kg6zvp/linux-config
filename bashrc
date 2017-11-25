@@ -40,9 +40,9 @@ done
 #Set custom prompt
 if [[ ! -z $(type -t parse_git_branch) ]]; then
 	# the command is defined
-	export PS1="[\u@\[\033[33m\]\h\[\033[00m\] \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\]]\$ "
+	PS1="[\u@\[\033[33m\]\h\[\033[00m\] \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\]]\$ "
 else
 	# the command isn't defined
-	export PS1="[\u@\[\033[33m\]\h\[\033[00m\] \W\[\033[32m\]\[\033[00m\]]\$ "
+	PS1="[\u@\[\033[33m\]\h\[\033[00m\] \W\[\033[32m\]\[\033[00m\]]\$ "
 fi
 
