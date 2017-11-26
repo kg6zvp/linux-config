@@ -32,5 +32,5 @@
 function notify(){
 	title=$1
 	body=$2
-	curl "https://api.simplepush.io/send/R4dyNd/$title/$body"
+	curl "https://api.simplepush.io/send/R4dyNd/$title/$body" && echo ""
 }
