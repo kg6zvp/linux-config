@@ -1,0 +1,4 @@
+#!/bin/bash
+
+config=".gvimrc" source_file="$1/gvimrc" source $1/modules.d/config_installer
+
