@@ -1,0 +1,4 @@
+#!/bin/bash
+
+alias llsh='ls -l -s -h'
+alias lla='ls -l -a'
