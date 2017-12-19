@@ -15,4 +15,5 @@ else
 	alias gsha="git rev-parse HEAD" #Show sha of last commit
 	source /usr/share/bash-completion/completions/git
 	complete -o bashdefault -o default -o nospace -F __git_wrap__git_main g
+	export -f parse_git_branch
 fi
