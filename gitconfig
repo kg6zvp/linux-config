@@ -12,6 +12,7 @@
 	ci = commit
 	cm = commit -m
 	co = checkout
+	coa = checkout -- .
 	cop = checkout -p
 	com = checkout master
 	sh = show HEAD
