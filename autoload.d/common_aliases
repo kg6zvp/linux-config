@@ -2,3 +2,5 @@
 
 alias llsh='ls -l -s -h'
 alias lla='ls -l -a'
+alias l1='ls -1'
+alias lsc='ls -1|wc -l'
