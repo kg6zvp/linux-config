@@ -27,7 +27,7 @@
 	pf = push --force
 	psu = push -u origin HEAD
 	pl = pull
-	plf = pull --force
+	plf = reset --hard
 	rao = remote add origin
 	rso = remote show origin
 	rbi = rebase -i
