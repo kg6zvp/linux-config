@@ -28,6 +28,7 @@ alias t="tmux"
 alias rp="runProject"
 
 alias rb="run_temp_env"
+alias ccat='pygmentize -g -O style=colorful,linenos=1'
 
 #Execute TMUX
 #[ -z "$TMUX" ] && export PWD=$PWD && tmux && exit;
