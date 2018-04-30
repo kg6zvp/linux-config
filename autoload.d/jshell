@@ -1,0 +1,3 @@
+#!/bin/bash
+
+alias mshell='JAVA_HOME=/usr/lib/jvm/java-9/ mvn com.github.johnpoth:jshell-maven-plugin:1.0:run'
