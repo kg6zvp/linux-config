@@ -18,6 +18,7 @@
 	coa = checkout -- .
 	cop = checkout -p
 	com = checkout master
+	cfd = clean -fd
 	sh = show HEAD
 	cp = cherry-pick
 	br = branch
