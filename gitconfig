@@ -13,7 +13,9 @@
 	ap = add -p
 	cb = checkout -b
 	ci = commit
+	cs = commit -s
 	cm = commit -m
+	csm = commit -s -m
 	co = checkout
 	coa = checkout -- .
 	cop = checkout -p
@@ -24,7 +26,9 @@
 	br = branch
 	brd = branch -D
 	ca = commit --amend
+	csa = commit -s --amend
 	can = commit --amend --no-edit
+	csan = commit -s --amend --no-edit
 	ds = diff --staged
 	db = diff master...HEAD
 	ph = push
@@ -34,5 +38,6 @@
 	plf = reset --hard
 	rao = remote add origin
 	rso = remote show origin
+	rpo = remote prune origin
 	rbi = rebase -i
 	rbim = rebase -i master
