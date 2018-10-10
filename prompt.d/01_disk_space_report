@@ -2,7 +2,7 @@
 
 #HDD Infos zeigen
 echo "Speicherplatz"
-DF_OUT="$(df -h)"
+DF_OUT="$(df -h /)"
 echo -n "	"
 echo "$DF_OUT"|head -n1
 echo -n "	"

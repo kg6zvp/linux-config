@@ -35,5 +35,5 @@ function notify(){
 	title=$1
 	body=$2
 	notify-send "$title" "$body"
-	curl "https://api.simplepush.io/send/R4dyNd/$title/$body" && echo ""
+	curl --data "key=${simplepush_token}&title=${title}&msg=${body}" "https://api.simplepush.io/send" && echo ""
 }
