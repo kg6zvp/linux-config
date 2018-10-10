@@ -37,7 +37,11 @@
 	pl = pull
 	plf = reset --hard
 	rao = remote add origin
+	rau = remote add upstream
+	rs = remote show
 	rso = remote show origin
+	rsu = remote show upstream
 	rpo = remote prune origin
+	rpu = remote prune upstream
 	rbi = rebase -i
 	rbim = rebase -i master
