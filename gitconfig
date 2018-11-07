@@ -15,7 +15,7 @@
 	ci = commit
 	cs = commit -s
 	cm = commit -m
-	csm = commit -s -m
+	csm = commit -S -m
 	co = checkout
 	coa = checkout -- .
 	cop = checkout -p
@@ -26,9 +26,9 @@
 	br = branch
 	brd = branch -D
 	ca = commit --amend
-	csa = commit -s --amend
+	csa = commit -S --amend
 	can = commit --amend --no-edit
-	csan = commit -s --amend --no-edit
+	csan = commit -S --amend --no-edit
 	ds = diff --staged
 	db = diff master...HEAD
 	ph = push
