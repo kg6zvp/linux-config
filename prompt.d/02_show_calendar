@@ -1,5 +1,5 @@
 # show the calendar
 
 #Zeige des Kalendars
-echo "Kalendar:      $(date '+%H:%M')"
-cal -s #|sed 's/^/\t/'
+echo "Kalendar:	       $(date '+%H:%M')"
+cal -s | sed 's/^/\t/' | grep -w -A4 -B6 $(date +%d) --color
