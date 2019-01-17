@@ -1,0 +1,9 @@
+#!/bin/bash
+
+alias vs='tmux split-window -h'
+alias split='tmux split-window -v'
+
+alias rsu='tmux resize-pane -U'
+alias rsd='tmux resize-pane -D'
+alias rsl='tmux resize-pane -L'
+alias rsr='tmux resize-pane -R'
