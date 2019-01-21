@@ -37,3 +37,5 @@ function notify(){
 	notify-send "$title" "$body"
 	curl --data "key=${simplepush_token}&title=${title}&msg=${body}" "https://api.simplepush.io/send" && echo ""
 }
+
+alias generate_password='openssl rand -base64 32|sed -E "s:[/=\\]::g"'
