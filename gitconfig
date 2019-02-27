@@ -7,6 +7,7 @@
 [credential]
 	helper = cache --timeout=7200
 [alias]
+	lff = log --follow --graph --decorate --
 	lg = log --graph --decorate
 	lgl = log --graph --decorate --oneline
 	st = status
