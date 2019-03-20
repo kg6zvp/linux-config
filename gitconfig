@@ -13,6 +13,7 @@
 	st = status
 	ap = add -p
 	cb = checkout -b
+	cbo = checkout --orphan
 	ci = commit
 	cs = commit -s
 	cm = commit -m
