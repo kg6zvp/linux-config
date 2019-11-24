@@ -21,6 +21,7 @@
 	co = checkout
 	coa = checkout -- .
 	cop = checkout -p
+	cot = checkout -t
 	com = checkout master
 	cfd = clean -fd
 	sh = show HEAD

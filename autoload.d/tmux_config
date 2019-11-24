@@ -1,0 +1,4 @@
+#!/bin/bash
+
+config=".tmux.conf" source_file="$1/tmuxconf" source $1/modules.d/config_installer
+
