@@ -9,6 +9,11 @@ if [ -z "$PS1" ]; then
 	return
 fi
 
+# Load core.d
+for f in $1/core.d/*; do
+	source "$f"
+done
+
 # Load everything in autoload.d first
 for f in $1/autoload.d/*; do
 	source "$f"

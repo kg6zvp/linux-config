@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ "$(uname)" == "Darwin" ]; then
+	export OS="mac"
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+	export OS="linux"
+else
+	echo "core.d/00_machine_info encountered UNKNOWN OS"
+	echo "uname: $(uname)"
+	export OS="UNKNOWN"
+fi

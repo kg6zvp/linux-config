@@ -2,5 +2,12 @@
 
 #HDD Infos zeigen
 echo "Speicherplatz"
-df -h /|sed 's/^/\t/'
+case $OS in
+	linux)
+		df -h /|sed 's/^/\t/'
+		;;
+	mac)
+		df -h -P /|sed 's/^/	/'
+		;;
+esac
 echo ""

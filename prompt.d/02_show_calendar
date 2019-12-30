@@ -2,4 +2,11 @@
 
 #Zeige des Kalendars
 echo "Kalendar:	       $(date '+%H:%M')"
-cal -s | sed 's/^/\t/' | grep -w -A4 -B6 $(date +%d) --color
+case $OS in
+	linux)
+		cal -s | sed 's/^/\t/' | grep -w -A4 -B6 $(date +%d) --color
+		;;
+	mac)
+		#cal | sed 's/^/	/' | gegrep -w -A4 -B6 $(date +%d) --color
+		;;
+esac
