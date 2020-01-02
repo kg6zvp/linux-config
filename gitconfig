@@ -15,7 +15,9 @@
 	cb = checkout -b
 	cbo = checkout --orphan
 	ci = commit
+	quone = clone
 	cs = commit -s
+	cam = commit -am
 	cm = commit -m
 	csm = commit -S -m
 	co = checkout
