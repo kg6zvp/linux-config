@@ -20,7 +20,7 @@ alias setkbd="setxkbmap -option caps:escape"
 bind 'set show-mode-in-prompt on' #show vim mode inside the prompt
 
 alias md2pdf="pandoc --variable urlcolor=cyan -V geometry:margin=2cm"
-alias github2pdf="md2pdf -V geometry:margin=2cm --from=markdown_github"
+alias github2pdf="md2pdf -V geometry:margin=2cm --from=gfm"
 alias sshfsmediaproxy='sshfs -o ProxyCommand="nc --proxy localhost:8005 --proxy-type socks5 %h %p" 192.168.1.127:/home/ nas'
 alias t="tmux"
 
