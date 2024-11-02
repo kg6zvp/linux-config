@@ -28,6 +28,7 @@
 	cfd = clean -fd
 	sh = show HEAD
 	cp = cherry-pick
+	mp = merge --no-ff --no-commit
 	br = branch
 	brd = branch -D
 	ca = commit --amend
@@ -50,3 +51,5 @@
 	rpu = remote prune upstream
 	rbi = rebase -i
 	rbim = rebase -i master
+[init]
+	defaultBranch = master
