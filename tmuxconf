@@ -1,4 +1,5 @@
 setw -g mode-keys vi
+set -g pane-border-status bottom
 
 bind h select-pane -L
 bind j select-pane -D
