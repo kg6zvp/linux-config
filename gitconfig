@@ -29,6 +29,8 @@
 	sh = show HEAD
 	cp = cherry-pick
 	mp = merge --no-ff --no-commit
+	cpa = cherry-pick --abort
+	cpc = cherry-pick --continue
 	br = branch
 	brd = branch -D
 	ca = commit --amend
@@ -36,6 +38,8 @@
 	can = commit --amend --no-edit
 	csan = commit -S --amend --no-edit
 	ds = diff --staged
+	dfs = difftool --tool=vimdiff -y
+	dfss = difftool --staged --tool=vimdiff -y
 	db = diff master...HEAD
 	ph = push
 	pf = push --force
